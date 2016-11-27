@@ -1,0 +1,384 @@
+/* Beginning of Body Styling aka Entire Page Shared Styling */
+body h1{
+  font-family: 'Bungee Hairline', cursive;
+  font-weight: bold;
+}
+
+body h2{
+  font-family: 'Permanent Marker', cursive;
+  font-weight: italic, bold;
+  font-size:30px;
+  color: #cfcfcf;
+}
+/* End of Body Styling */
+
+
+/* Beginning of Container Styling */
+.container {
+  margin-top: 7%;
+  text-align: center;
+}
+.sub_container {
+  text-align: center;
+}
+.nav_container {
+  margin-top: 10%;
+}
+.sub_nav_container {
+  margin-top: 5%;
+}
+/* End of Container Styling */
+
+
+/* Beginning of Animation Styling */
+.runner {
+    margin
+    /* Set the width and height to the size of one single frame of your spritesheet */
+    width:100px;
+    height:200px;
+    background-image: url("../images/runner.png");
+
+    /* Set the step count to 1 frame less than your total spritesheet */
+  -webkit-animation: play 1s steps(16) infinite;
+     -moz-animation: play 1s steps(16) infinite;
+      -ms-animation: play 1s steps(16) infinite;
+       -o-animation: play 1s steps(16) infinite;
+          animation: play 1s steps(16) infinite;
+}
+
+/*[][] These are your browser display parameters for Chrome, Mozilla, IE, etc. [][]*/
+@-webkit-keyframes play {
+ from { background-position:    0px; }
+ /* This is the max width of your entire spritesheet */
+   to { background-position: -1600px; }
+}
+
+@-moz-keyframes play {
+ from { background-position:    0px; }
+   to { background-position: -1600px; }
+}
+
+@-ms-keyframes play {
+ from { background-position:    0px; }
+   to { background-position: -1600px; }
+}
+
+@-o-keyframes play {
+ from { background-position:    0px; }
+   to { background-position: -1600px; }
+}
+
+@keyframes play {
+ from { background-position:    0px; }
+   to { background-position: -1600px; }
+}
+/* End of Animation Styling */
+
+
+/* Beginning of Navigational Links Styling */
+.links {
+  text-transform: uppercase;
+}
+.sublinks {
+  text-transform: uppercase;
+  font-size: 23px;
+}
+/* End of Navigational Links Styling */
+
+
+/* Beginning of Animation Styling */
+#bigbox {
+  margin:auto;
+  margin-top: 30px;
+  width: 600px;
+  height: 600px;
+  background-image: url("http://i.imgur.com/J8MYJPe.jpg");
+  border: 10px solid black;
+  transition: all 0.4s ease-in-out;
+}
+
+#bigbox1 {
+margin:auto;
+margin-top: 30px;
+width: 610px;
+height:710px;
+background-image: url("../images/industrialboys.png");
+border: 10px solid black;
+transition: all 0.4s ease-in-out;
+}
+
+
+#bigbox2 {
+  margin:auto;
+  margin-top:30px;
+  width: 650px;
+  height: 600px;
+  background-image: url("../images/workerman.png");
+  border: 10px solid black;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Animated Elements Separated Into Individual States */
+
+/*Animation Overflow aka What To Do When It's Outside The Container */
+#philosopher {
+  overflow: hidden;
+}
+
+#quote {
+  overflow: hidden;
+}
+
+#philosopher1 {
+  overflow: hidden;
+ }
+
+#quote1 {
+  overflow: hidden;
+ }
+
+#philosopher2 {
+  overflow: hidden;
+ }
+
+#quote2 {
+  overflow: hidden;
+}
+
+/* Intial Position State */
+#philosopher {
+  font-weight: bold;
+  transform:translateY(-800px);
+  opacity: .1;
+}
+
+#philosopher1 {
+font-weight: bold;
+transform:translateY(-800px);
+opacity: .1;
+}
+
+#philosopher2 {
+  font-weight: bold;
+  transform:translateY(-800px);
+  opacity: .1;
+
+}
+
+#quote {
+  font-style: bold;
+  transform:translateX(-900px);
+  opacity: 1;
+}
+
+#quote1{
+font-style: bold;
+transform:translateX(-900px);
+opacity: 1;
+}
+
+#quote2{
+  font-style: bold;
+  transform:translateX(-900px);
+  opacity: 1;
+}
+
+#karl {
+  transform:translateY(120px);
+  opacity:.1;
+}
+
+#friedrich{
+  transform:translateY(120px);
+  opacity:.1;
+}
+
+#immanuel{
+  transform:translateY(120px);
+  opacity:.1;
+}
+
+
+/* Animation Duration */
+#philosopher {
+transition-delay: :0.4s;
+}
+
+#philosopher1{
+transition-delay: 0.4s;
+}
+
+#philosopher2{
+transition-delay: 0.4s;
+
+}
+
+#quote {
+  transition-delay: 0.2s;
+}
+
+#quote1{
+transition-delay: 0.2s;
+}
+
+
+#quote2{
+transition-delay: 0.2s;
+
+}
+
+#karl {
+  transition-delay: 0.2s;
+}
+
+#friedrich {
+transition-delay: : 0.2s;
+
+}
+
+#immanuel{
+transition-delay: : 0.2s;
+
+}
+
+/* When Hovered Over Will Perform This Action */
+#bigbox:hover, #philosopher  {
+  font-size: 30px;
+  transform:translateX(-200px);
+  opacity: .6;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+#bigbox1:hover, #philosopher1 {
+font-size: 30px;
+transform:translateY(0px);
+opacity: .6;
+transition: all 0.2s ease-in-out;
+}
+
+
+
+
+
+#bigbox2:hover, #philosopher2{
+  font-size: 30px;
+  transform:translateX(200px);
+  opacity: .8;
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* you are playing with the above ones now, juan */
+
+
+#bigbox:hover, #quote  {
+  transform:translate(0px,100px);
+  opacity: 1;
+  background-color: rgba(20,20,20,.6);
+  transition: all 0.1s ease-in-out;
+  border: 8px solid white;
+}
+
+
+#bigbox1:hover, #quote1{
+  transform:translate(0px, 100px);
+  opacity: 1;
+  background-color: rgba(20,20,20,.6);
+  transition: all 0.1s ease-in-out;
+  border: 8px solid white;
+
+}
+
+
+#bigbox2:hover, #quote2 {
+  transform:translate(0px, 100px);
+  opacity: 1;
+  background-color: rgba(20,20,20,.6);
+  transition: all 0.1s ease-in-out;
+  border: 8px solid white;
+}
+
+
+
+#bigbox:hover, #karl{
+  transform:translate(90px,80px);
+  font-style: italic;
+  opacity: 1;
+ transition: all 0.2s ease-in-out;
+}
+
+#bigbox1:hover, #friedrich{
+  transform:translate(90px,80px);
+  font-style: italic;
+  opacity: 1;
+   transition: all 0.2s ease-in-out;
+}
+
+#bigbox2:hover,#immanuel{
+  transform:translate(90px,80px);
+  font-style: italic;
+  opacity: 1;
+   transition: all 0.2s ease-in-out;
+}
+
+
+
+
+/*the size of images are going to be below here */
+#bigbox:hover{
+  background-size: 200px;
+  overflow:hidden;
+  transition: all 0.5s ease-in-out;
+
+}
+
+#bigbox1:hover {
+  background-size: 1000px;
+  overflow:hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+#bigbox2:hover {
+  background-size: 650px;
+  overflow:hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* Shared Font Styling */
+#philosopher{
+  color: white;
+  }
+#philosopher1{
+    color: white;
+  }
+ #philosopher2{
+   color: white;
+   }
+#quote{
+  color: white;
+  }
+#quote1{
+ color: white;
+  }
+
+#quote2{
+color: white;
+}
+
+#karl{
+color: white;
+}
+
+#friedrich{
+color: white;
+}
+
+#immanuel {
+color: white;
+}
+/* End of  Animation Styling */
